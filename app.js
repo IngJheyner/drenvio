@@ -19,8 +19,8 @@ app.disable('x-powered-by')
 app.use(express.json())
 
 // Rutas de la API
-app.use('/api/products', productRouter)
-app.use('/api/users', userRouter)
+app.use('/api/v1/products', productRouter)
+app.use('/api/v1/users', userRouter)
 
 // Middleware para el manejo de errores
 app.use(handlers.errorHandler)
