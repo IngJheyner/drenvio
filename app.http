@@ -1,0 +1,36 @@
+### Listar productos
+GET http://localhost:3001/api/products
+
+### Listar productos con precios especiales
+GET http://localhost:3001/api/products/65735ae25107045fc2e77fee/Producto 4
+
+### 🚨 Opcionales
+### Crear un nuevo producto
+POST http://localhost:3001/api/products
+Content-Type: application/json
+
+{
+    "name": "Producto 5",
+    "price": 5000,
+    "stock": 50,
+    "specialPrices": [
+        {
+            "userId": "65735aea5107045fc2e77ff0",
+            "price": 2500
+        }
+    ]
+}
+
+### Listar todos los usuarios
+GET http://localhost:3001/api/users
+
+### Crear un usuario
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+    "name": "Usuario 2"
+}
+
+### Eliminar todos los productos
+DELETE http://localhost:3001/api/products
